@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rental Yield Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rental Yield Calculator</h1>
+        <form id="calculatorForm">
+            <div class="form-group">
+                <label for="monthlyRent">Monthly Rent</label>
+                <input type="number" class="form-control" id="monthlyRent" placeholder="Enter Monthly Rent">
+            </div>
+            <div class="form-group">
+                <label for="annualRent">Annual Rent</label>
+                <input type="number" class="form-control" id="annualRent" placeholder="Enter Annual Rent">
+            </div>
+            <div class="form-group">
+                <label for="propertyCost">Property Cost</label>
+                <input type="number" class="form-control" id="propertyCost" placeholder="Enter Property Cost">
+            </div>
+            <div class="form-group">
+                <label for="rentalYield">Rental Yield</label>
+                <input type="text" class="form-control" id="rentalYield" placeholder="Enter Rental Yield" pattern="^\d+(\.\d{1,2})?$">
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+            <button type="button" id="saveButton" class="btn btn-primary">Save</button>
+
+        </form>
+        <table class="table" id="resultsTable">
+            <thead>
+                <tr>
+                    <th scope="col">Monthly Rent</th>
+                    <th scope="col">Annual Rent</th>
+                    <th scope="col">Property Cost</th>
+                    <th scope="col">Rental Yield</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Tags</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
