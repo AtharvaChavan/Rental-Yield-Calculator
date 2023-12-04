@@ -3,6 +3,27 @@
 <head>
     <title>Rental Yield Calculator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+        }
+
+        .credits {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+            .credits a {
+                color: #f22; /* Fallback color for browsers that don't support background-clip: text */
+                background-image: linear-gradient(to right, #f22, #f2f, #22f, #2ff, #2f2, #2f2, #ff2, #f22);
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -44,6 +65,11 @@
             </tbody>
         </table>
     </div>
+
+    <div class="credits">
+        <a target="_blank" href="https://atharvachavan.github.io/brainmetron">Copyright © BrainMetron Pvt. Ltd</a>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="calculator.js"></script>

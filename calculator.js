@@ -38,12 +38,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
             rentalYield: form.rentalYield.value
         };
 
-        //// Add result to table
-        //addRowToTable(result);
+        /* 
+         * COMMENTED else it saves directly to table after user clicks calculate button
+        // Add result to table
+        addRowToTable(result);
 
-        //// Save result to local storage
-        //previousResults.push(result);
-        //localStorage.setItem('results', JSON.stringify(previousResults));
+        // Save result to local storage
+        previousResults.push(result);
+        localStorage.setItem('results', JSON.stringify(previousResults));
+        */
     });
 
     const saveButton = document.getElementById('saveButton');
